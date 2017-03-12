@@ -1,0 +1,19 @@
+---
+title: "README"
+author: "Jamaal Green"
+date: "3/12/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I had the privilege to attend a talk on ["Global Heartland"](http://www.iupress.indiana.edu/product_info.php?products_id=807777) by [Prof. Faranak Miraftab](http://urban.illinois.edu/people/faculty-directory/core-faculty/10-faranak-miraftab), a bad ass planning professor at UI. Her talk gave a summary of some of the major findings of the book, but she had some additional questions concerning the labor market make ups of areas like she covers in her book.
+
+In particular, she is trying to map out where, and in what industries, African immigrants are working in non-metropolitan areas in the US. One of the quietest changes in many rural areas is not only the growth of Latino immigrant populations (Mexican in the town she covers in book) but also the growth in African migrants (Togolese in her book) in areas of the country where you never think of Africans being present.
+
+This is a particularly thorny empirical problem because you are dealing with relatively small places and trying to pinpoint even smaller populations. An imperfect response to this would be to use available microdata (PUMS in this case) in order to estimate where and in what industries African migrants are concentrating. In this case, we have to accept geographic roughness for, ideally, more institutional detail. 
+
+The goals of this brief exploration then are to get labor market information (broad industry and ideally occupational membership) of African immigrants in non-metro areas.
+
