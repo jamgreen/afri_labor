@@ -5,9 +5,6 @@ date: "3/12/2017"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ##PUMS
 
@@ -90,7 +87,9 @@ ind_vect <- c("Colleges, Universities & Prof. Schools", "Animal Slaughtering and
 
 top_ind <- cbind(top_ind, ind_vect)
 
-pander(top_ind, style = 'rmarkdown', caption = "Top 10 Industries for African Immigrants\n in Non-Metro Areas", justify = c("left", "right", "right", "right"))
+names(top_ind) <- c("INDNAICS", "Employment", "CV", "Industry")
+
+pander(top_ind, caption = "Top 10 Industries for African Immigrants\n in Non-Metro Areas", justify = c("left", "right", "right", "right"))
 ```
 
 As you can see, there's quite a mix of industries here, of both high, medium, and low skilled work. But, also, this mix of industries reflects a rather variegated workforce. 
