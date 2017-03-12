@@ -51,7 +51,7 @@ I'll be making use of the survey package and some cribbed code from [Anthony Dam
 
 The final table of African migrants in non-metro areas only has 905 observations. This is an incredible small table and, as such, I can only really speak at the broadest measures, if that. But first let's just see if we can get some reliable basic summary information. Let's start with average wages from income. This is a variable that will give us the income from the jobs an individual works in. 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
 #mean wages from income
 
@@ -63,7 +63,7 @@ Average wages from income for non-metro African migrants is a little less that $
 
 So, in what industries are these folks working in? In "Global Heartland", the primary employer of immigrants in the study town was a meatpacking plant. It is dangerous, hard work for relatively low pay. As such, it may be reasonable to assume that many of these migrants are working in agricultural processing/manufacturing industries. Such establishments are often hurting for labor, actively recruit African immigrants, and will hire you on the spot. For time sensitive immigrants looking to make as much money as quickly as possible to pay off debt, these jobs are irresistible. So what are these industries?
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
 ind_total <- svytotal(~INDNAICS, small_pums, vartype = "cv")
 
